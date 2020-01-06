@@ -1,35 +1,19 @@
-/*
-* SMACSS + SCSS starter v2.1
-* Inspired by SMACSS http://smacss.com
-* Author: @jonathanpath
-* Date: 4 August 2015
-*
-* https://github.com/jonathanpath/SASS-SMACSS
-* See file structure in http://jonathanpath.com/sass+smacss/scss/style.scss
-*
-* Coding rules : https://github.com/necolas/idiomatic-css
-*
-*/
-
 @tailwind base;
 @tailwind components;
+
+.global-margin {
+  @apply px-12;
+}
+
+.flex-default-config {
+  @apply flex items-center justify-between;
+}
+
+.form-field {
+  @apply border border-gray-700 appearance-none block text-gray-600 rounded py-3 px-4 mb-3 leading-tight;
+}
 
 @tailwind utilities;
 
 /* Vendor */
 @import "@fortawesome/fontawesome-free/css/all.css";
-
-// /* Base */
-// @import "base";
-
-// /* Layouts */
-// @import "layouts/navbar";
-// @import "layouts/poster";
-// @import "layouts/members";
-// @import "layouts/photo";
-
-// /* Site settings */
-// @import "site-settings";
-
-// /* Import npm dependecies */
-// @import "~bootstrap/scss/bootstrap.scss";
